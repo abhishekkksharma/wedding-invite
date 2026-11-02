@@ -1,12 +1,44 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import FloralLine from "@/assets/image.png";
 import Bow from "@/assets/bow.png";
 import GaneshJi from "@/assets/ganeshji.png";
 
 export default function WeddingInfo() {
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      {
+        threshold: 0.15,
+      }
+    );
+
+    const currentEl = sectionRef.current;
+    if (currentEl) {
+      observer.observe(currentEl);
+    }
+
+    return () => {
+      if (currentEl) {
+        observer.unobserve(currentEl);
+      }
+    };
+  }, []);
+
   return (
-    <section className="relative w-full min-h-screen bg-[#faf4ef] px-4 pt-12 pb-10 flex flex-col items-center select-none overflow-hidden">
+    <section
+      ref={sectionRef}
+      className="relative w-full min-h-screen bg-[#faf4ef] px-4 pt-12 pb-10 flex flex-col items-center select-none overflow-hidden"
+    >
       {/* Top Floral Garland Garland Decor (Draping smoothly across top) */}
       <div className="absolute -top-6 left-0 right-0 w-full pointer-events-none z-10 flex justify-center">
         <Image
@@ -21,8 +53,14 @@ export default function WeddingInfo() {
       <div className="relative z-20 w-full max-w-[390px] border border-[#c5a878]/50 rounded-t-full mt-10 sm:mt-12 p-1.5 ">
         <div className="w-full border border-[#c5a878]/35 rounded-t-full px-4 pt-0 pb-8 flex flex-col items-center text-center">
           
-          {/* Bow & Ganesh Ji Motif at the Apex of Arch */}
-          <div className="flex flex-col justify-center items-center -mt-7 sm:-mt-8 mb-2 relative z-30">
+          {/* Bow & Ganesh Ji Motif at the Apex of Arch with Slide-Down Animation */}
+          <div
+            className={`flex flex-col justify-center items-center -mt-7 sm:-mt-8 mb-2 relative z-30 transition-all duration-1000 ease-out transform ${
+              isVisible
+                ? "translate-y-0 opacity-100 scale-100"
+                : "-translate-y-12 opacity-0 scale-90 pointer-events-none"
+            }`}
+          >
             <Image
               className="w-11 h-11 object-contain drop-shadow-xs"
               src={Bow}

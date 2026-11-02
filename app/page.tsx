@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import BackgroundMusic from "@/components/BackgroundMusic";
 import WeddingInfo from "@/components/WeddingInfo";
+import SaveTheDate from "@/components/SaveTheDate";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <BackgroundMusic />
         <HeroSection />
         <WeddingInfo />
+        <SaveTheDate/>
       </main>
     </div>
   );
