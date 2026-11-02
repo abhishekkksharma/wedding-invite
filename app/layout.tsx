@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Aarav & Ananya | Wedding Invitation",
-  description: "We invite you to celebrate the wedding of Aarav & Ananya",
+  title: "Vanshika & Gourav | Wedding Invitation",
+  description: "We invite you to celebrate the wedding of Vanshika & Gourav",
 };
 
 export const viewport: Viewport = {
@@ -28,7 +28,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-full bg-stone-900 text-stone-800 selection:bg-amber-100 flex flex-col items-center justify-start overflow-x-hidden">
+      <body className="min-h-full text-stone-800  selection:bg-amber-100 flex flex-col items-center justify-start overflow-x-hidden">
         {children}
       </body>
     </html>

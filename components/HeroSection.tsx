@@ -26,7 +26,7 @@ export default function HeroSection({
       }}
     >
       {/* Subtle Ambient Vignette / Soft Warm Glow in Center */}
-      <div className="absolute inset-0 bg-radial from-amber-50/20 via-transparent to-black/10 pointer-events-none" />
+      <div className="absolute inset-0  pointer-events-none" />
 
       {/* Floating Rose Petals Animation for Royal Wedding Feel */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -63,7 +63,7 @@ export default function HeroSection({
         {/* Ampersand & */}
         <div className="my-0.5 flex items-center justify-center">
           <span className="font-serif-body italic text-2xl sm:text-3xl text-[#996e2a] font-normal opacity-90">
-            &
+            weds
           </span>
         </div>
 
@@ -86,7 +86,7 @@ export default function HeroSection({
       </div>
 
       {/* BOTTOM CTA: Scroll to Celebrate */}
-      <div className="relative z-10 w-full pb-[4vh] bottom-[12%] sm:pb-[5vh] flex flex-col items-center justify-center">
+      <div className="relative z-10 w-full pb-[4vh] bottom-[15%] sm:pb-[5vh] flex flex-col items-center justify-center">
         <p className="font-royal text-[9px] sm:text-[10px] tracking-[0.28em] text-[#6b4c37] font-semibold uppercase mb-1">
           {scrollPrompt}
         </p>
