@@ -13,8 +13,8 @@ interface HeroSectionProps {
 export default function HeroSection({
   shloka = "॥ श्री गणेशाय नमः ॥",
   tagline = "WE INVITE YOU TO CELEBRATE THE WEDDING OF",
-  groomName = "Vanshika",
-  brideName = "Gourav",
+  groomName = "Gourav",
+  brideName = "Vanshika",
   familyLine = "Together with their families",
   scrollPrompt = "SCROLL TO CELEBRATE",
 }: HeroSectionProps) {
@@ -56,8 +56,8 @@ export default function HeroSection({
         </p>
 
         {/* Groom Name */}
-        <h1 className="font-script text-5xl sm:text-6xl gold-gradient-text gold-shimmer tracking-normal leading-[1.1] py-1">
-          {groomName}
+        <h1 className="font-script text-6xl sm:text-6xl gold-gradient-text gold-shimmer tracking-normal leading-[1.1] py-1">
+          {brideName}
         </h1>
 
         {/* Ampersand & */}
@@ -68,8 +68,8 @@ export default function HeroSection({
         </div>
 
         {/* Bride Name */}
-        <h2 className="font-script text-5xl sm:text-6xl gold-gradient-text gold-shimmer tracking-normal leading-[1.1] py-1">
-          {brideName}
+        <h2 className="font-script text-6xl sm:text-6xl gold-gradient-text gold-shimmer tracking-normal leading-[1.1] py-1">
+          {groomName}
         </h2>
 
         {/* Decorative Divider */}
@@ -86,7 +86,7 @@ export default function HeroSection({
       </div>
 
       {/* BOTTOM CTA: Scroll to Celebrate */}
-      <div className="relative z-10 w-full pb-[4vh] sm:pb-[5vh] flex flex-col items-center justify-center">
+      <div className="relative z-10 w-full pb-[4vh] bottom-[12%] sm:pb-[5vh] flex flex-col items-center justify-center">
         <p className="font-royal text-[9px] sm:text-[10px] tracking-[0.28em] text-[#6b4c37] font-semibold uppercase mb-1">
           {scrollPrompt}
         </p>

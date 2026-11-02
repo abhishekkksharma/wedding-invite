@@ -41,6 +41,16 @@
   animation: gentle-bounce 2s ease-in-out infinite;
 }
 
+/* Music Equalizer Wave */
+@keyframes music-bar {
+  0%, 100% {
+    height: 4px;
+  }
+  50% {
+    height: 16px;
+  }
+}
+
 /* Floating Rose Petals */
 @keyframes float-petal {
   0% {
