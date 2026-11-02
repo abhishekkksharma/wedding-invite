@@ -1,26 +1,103 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.font-script {
+  font-family: 'Great Vibes', 'Alex Brush', cursive, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.font-royal {
+  font-family: 'Cinzel', 'Cinzel Decorative', 'Playfair Display', serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.font-serif-body {
+  font-family: 'Cormorant Garamond', 'Garamond', 'Georgia', serif;
+}
+
+.font-devanagari {
+  font-family: 'Rozha One', 'Nirmala UI', 'Mangal', 'Devanagari Sangam MN', serif;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #7c4c16 0%, #b8860b 25%, #e6ca65 48%, #c5972c 70%, #855318 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-shimmer {
+  filter: drop-shadow(0 1px 3px rgba(212, 175, 55, 0.3));
+}
+
+@keyframes gentle-bounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(5px);
+    opacity: 1;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-gentle-bounce {
+  animation: gentle-bounce 2s ease-in-out infinite;
 }
+
+/* Floating Rose Petals */
+@keyframes float-petal {
+  0% {
+    transform: translateY(-20px) rotate(0deg) translateX(0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.6;
+  }
+  85% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(105vh) rotate(360deg) translateX(40px);
+    opacity: 0;
+  }
+}
+
+.petal {
+  position: absolute;
+  font-size: 14px;
+  user-select: none;
+  pointer-events: none;
+  animation-name: float-petal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.petal-1 {
+  left: 15%;
+  animation-duration: 9s;
+  animation-delay: 0s;
+}
+
+.petal-2 {
+  left: 45%;
+  animation-duration: 12s;
+  animation-delay: 2s;
+}
+
+.petal-3 {
+  left: 75%;
+  animation-duration: 8s;
+  animation-delay: 4s;
+}
+
+.petal-4 {
+  left: 30%;
+  animation-duration: 11s;
+  animation-delay: 6s;
+}
+
+.petal-5 {
+  left: 85%;
+  animation-duration: 10s;
+  animation-delay: 3s;
+}
+
+
+
