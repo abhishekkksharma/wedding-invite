@@ -127,3 +127,116 @@
 .animate-reveal {
   animation: revealCard 1s ease-out forwards;
 }
+
+
+
+.minimal-frame {
+  position: relative;
+  width: min(76vw, 310px);
+  height: 390px;
+  padding: 4px;
+
+  background: #f9d5e4;
+  border: 1px solid #e98bb5;
+  border-radius: 170px 170px 8px 8px;
+
+  box-shadow: 0 5px 18px rgba(190, 90, 130, 0.10);
+}
+
+.minimal-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  border: 1px solid #f4b8d0;
+  border-radius: 165px 165px 5px 5px;
+  background: #fff7fa;
+}
+
+.minimal-photo {
+  object-fit: cover;
+  object-position: center;
+  animation: softFade 2.1s ease;
+}
+
+@keyframes softFade {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.minimal-caption {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.4);
+}
+
+.caption-script {
+  font-family: cursive;
+  font-size: 27px;
+  font-style: italic;
+}
+
+.caption-names {
+  font-size: 12px;
+  letter-spacing: 5px;
+  margin-top: 3px;
+}
+
+.minimal-roses {
+  position: absolute;
+  bottom: -13px;
+  left: -5%;
+  width: 110%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+.minimal-rose {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 3px rgba(120, 30, 50, 0.15));
+  animation: gentleFloat 3s ease-in-out infinite;
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 400px) {
+  .minimal-frame {
+    width: 76vw;
+    height: 350px;
+  }
+
+  .minimal-rose {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .minimal-photo,
+  .minimal-rose {
+    animation: none;
+  }
+}

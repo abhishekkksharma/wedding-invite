@@ -18,7 +18,7 @@ function ScratchCard() {
 
   // Countdown Timer
   useEffect(() => {
-    const weddingDate = new Date(2026, 10, 25).getTime();
+    const weddingDate = new Date(2026, 10, 24).getTime();
 
     const updateTimer = () => {
       const diff = Math.max(0, weddingDate - Date.now());
@@ -125,7 +125,7 @@ function ScratchCard() {
         {/* Hidden Content */}
         <div className="absolute inset-0 flex flex-col justify-center items-center rounded-lg border-2 border-[#b18a51] bg-[#fffaf2]">
           <p className="text-lg font-serif text-[#8b7040] text-center">
-            Wednesday, 25th
+            Wednesday, 24th
             <br />
             November 2026
           </p>

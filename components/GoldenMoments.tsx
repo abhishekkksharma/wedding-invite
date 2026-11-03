@@ -76,7 +76,7 @@ export default function GoldenMoments() {
       >
         {/* Title & Divider */}
         <div className="flex flex-col items-center text-center mb-3">
-          <h2 className="font-script text-3xl sm:text-4xl text-[#872341] gold-shimmer font-bold leading-tight">
+          <h2 className="font-script text-3xl sm:text-4xl text-[#872341] gold-shimmer font-bold leading-tight mt-6">
             Golden Moments
           </h2>
           <div className="flex items-center justify-center gap-2 mt-1 w-full opacity-80">
@@ -87,7 +87,7 @@ export default function GoldenMoments() {
         </div>
 
         {/* Schedule List (Carefully spaced to stay completely above the bottom peacocks) */}
-        <div className="flex flex-col gap-2.5 sm:gap-3 w-full px-1 pt-4">
+        <div className="flex flex-col gap-2.5 sm:gap-3 w-full px-1">
           {schedule.map((day, index) => (
             <div key={index} className="w-full flex flex-col">
               {/* Day Date Header */}

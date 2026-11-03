@@ -4,6 +4,7 @@ import WeddingInfo from "@/components/WeddingInfo";
 import SaveTheDate from "@/components/SaveTheDate";
 import Photo from "@/components/Photo";
 import GoldenMoments from "@/components/GoldenMoments";
+import PhotosMapped from "@/components/PhotosMapped";
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
         <HeroSection />
         <WeddingInfo />
         <SaveTheDate/>
-        <Photo/>
+        <PhotosMapped/>
+        {/* <Photo/> */}
         <GoldenMoments/>
       </main>
     </div>
