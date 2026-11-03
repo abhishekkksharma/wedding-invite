@@ -8,7 +8,7 @@ export default function HomeAdress() {
     const [isVisible, setIsVisible] = useState(false);
 
     const directionsUrl =
-        "https://www.google.com/maps/embed?pb=!4v1793716516937!6m8!1m7!1sbX0uxgtJNOKCGYgs_iGN3A!2m2!1d30.31599856279763!2d76.85075897091997!3f205.42!4f-10.760000000000005!5f0.7820865974627469";
+        "https://maps.app.goo.gl/3Mqg331d4EmMjy5D6";
 
 
     useEffect(() => {
@@ -66,7 +66,7 @@ export default function HomeAdress() {
                 {/* Black & White Compact Map */}
                 <div className="w-full mt-3 overflow-hidden rounded-lg border border-stone-200/90 shadow-xs contrast-[1.08] opacity-90 hover:opacity-100 transition-opacity">
                     <iframe
-                        src={directionsUrl}
+                        src="https://www.google.com/maps/embed?pb=!4v1793716516937!6m8!1m7!1sbX0uxgtJNOKCGYgs_iGN3A!2m2!1d30.31599856279763!2d76.85075897091997!3f205.42!4f-10.760000000000005!5f0.7820865974627469"
                         width="100%"
                         height="160"
                         style={{ border: 0 }}
