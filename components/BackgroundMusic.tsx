@@ -7,7 +7,7 @@ import { Music2, VolumeX } from "lucide-react";
 export default function BackgroundMusic() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
   const [isAtTop, setIsAtTop] = useState(true);
 
   // Hide music button when user scrolls down
