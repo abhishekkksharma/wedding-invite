@@ -37,7 +37,7 @@ export default function WeddingInfo() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full min-h-screen bg-[#faf4ef] px-4 pt-12 pb-10 flex flex-col items-center select-none overflow-hidden"
+      className="relative w-full h-[90vh] bg-[#faf4ef] px-4 pt-12 pb-10 flex flex-col items-center select-none overflow-hidden"
     >
       {/* Top Floral Garland Garland Decor (Draping smoothly across top) */}
       <div className="absolute -top-6 left-0 right-0 w-full pointer-events-none z-10 flex justify-center">

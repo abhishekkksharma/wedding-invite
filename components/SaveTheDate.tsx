@@ -38,7 +38,7 @@ function SaveTheDate() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen bg-[#faf3ed] px-3 py-4 overflow-hidden"
+      className="relative min-h-screen bg-[#faf3ed] px-3 overflow-hidden"
     >
       {/* Outer Border */}
       <div className="relative min-h-[calc(100svh-2rem)] border border-[#b77a27]/20 rounded-full p-2">

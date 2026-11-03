@@ -2,6 +2,8 @@ import HeroSection from "@/components/HeroSection";
 import BackgroundMusic from "@/components/BackgroundMusic";
 import WeddingInfo from "@/components/WeddingInfo";
 import SaveTheDate from "@/components/SaveTheDate";
+import Photo from "@/components/Photo";
+import GoldenMoments from "@/components/GoldenMoments";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
         <HeroSection />
         <WeddingInfo />
         <SaveTheDate/>
+        <Photo/>
+        <GoldenMoments/>
       </main>
     </div>
   );
