@@ -125,14 +125,14 @@ function ScratchCard() {
         {/* Hidden Content */}
         <div className="absolute inset-0 flex flex-col justify-center items-center rounded-lg border-2 border-[#b18a51] bg-[#fffaf2]">
           <p className="text-lg font-serif text-[#8b7040] text-center">
-            Wednesday, 24th
+            Tuesday, 24th
             <br />
             November 2026
           </p>
 
-          <p className="text-[11px] text-[#a18461] mt-2 italic">
+          {/* <p className="text-[11px] text-[#a18461] mt-2 italic">
             Taron ki chhaon mein
-          </p>
+          </p> */}
         </div>
 
         {/* Scratch Layer */}

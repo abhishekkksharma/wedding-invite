@@ -5,6 +5,7 @@ import SaveTheDate from "@/components/SaveTheDate";
 import Photo from "@/components/Photo";
 import GoldenMoments from "@/components/GoldenMoments";
 import PhotosMapped from "@/components/PhotosMapped";
+import HomeAdress from "@/components/HomeAdress";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <PhotosMapped/>
         {/* <Photo/> */}
         <GoldenMoments/>
+        <HomeAdress/>
       </main>
     </div>
   );

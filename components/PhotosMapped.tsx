@@ -4,7 +4,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-import VanshuPhoto from "@/assets/vanshu.jpeg";
+import VanshuPhoto from "@/assets/Photos/vanshu.jpeg";
 import RedRose from "@/assets/redrose.png";
 import Photo2 from "@/assets/Photos/2.jpeg";
 import Photo3 from "@/assets/Photos/3.jpeg";

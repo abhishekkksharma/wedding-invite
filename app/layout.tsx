@@ -1,13 +1,15 @@
-
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import MetaPhoto from "@/assets/mainpage.png";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://vanshuweddinginvitation.vercel.app"),
   title: "Vanshika & Gourav | Wedding Invitation",
   description:
     "We invite you to celebrate the wedding of Vanshika & Gourav",
-
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     title: "Vanshika & Gourav | Wedding Invitation",
     description:
@@ -47,6 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
