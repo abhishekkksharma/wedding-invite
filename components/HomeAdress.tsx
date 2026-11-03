@@ -57,7 +57,7 @@ export default function HomeAdress() {
 
                 {/* Address */}
                 <p className="font-serif-body text-[13px] text-[#4a3429] font-semibold leading-tight mt-1">
-                    #277, Sector 32, HUDA Urban Estate
+                    #267, Sector 32, HUDA Urban Estate
                 </p>
                 <p className="font-serif-body text-[11px] text-[#7a5b46] font-medium">
                     Ambala Cantt, Haryana
@@ -83,7 +83,7 @@ export default function HomeAdress() {
                     href={directionsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-2.5 inline-flex items-center justify-center gap-1.5 w-full py-2 rounded-lg bg-stone-900 hover:bg-stone-800 text-stone-100 text-[10.5px] font-royal tracking-widest uppercase transition-all active:scale-[0.99] shadow-xs cursor-pointer"
+                    className="mt-2.5 inline-flex items-center justify-center gap-1.5 w-full py-2 rounded-lg bg-pink-900 hover:bg-pink-800 text-stone-100 text-[10.5px] font-royal tracking-widest uppercase transition-all active:scale-[0.99] shadow-xs cursor-pointer"
                 >
                     <MapPin size={12} className="text-[#d4af37]" />
                     <span>Get Directions</span>
@@ -93,7 +93,7 @@ export default function HomeAdress() {
                 
 
 
-                <div className="mt-6 border-t border-stone-200 pt-4 text-center">
+                <div className="mt-6  pt-4 text-center">
                     
 
                     <h3 className="font-serif text-2xl text-stone-900 mb-1">
