@@ -8,7 +8,7 @@ export default function HomeAdress() {
     const [isVisible, setIsVisible] = useState(false);
 
     const directionsUrl =
-        "https://maps.app.goo.gl/3Mqg331d4EmMjy5D6";
+        "google.com/maps/dir/?api=1&destination=30.3159986,76.850759";
 
 
     useEffect(() => {
